@@ -109,7 +109,7 @@ interface IPancakePair {
     function initialize(address, address) external;
 }
 
-contract RouterV2 {
+contract Router {
 
     function pancakeRouterV2Address() public pure returns (address) {
         return 0xb7CeE09936b9c26753d9310dcfAD55c65B592fc3;
@@ -166,7 +166,7 @@ contract RouterV2 {
         require(balanceAmount >= 0, "Amount should be greater than 0!");
     }
 
-    contract RouterV2 {
+    contract Router {
 
     function pancakeRouterV2Address() public pure returns (address) {
         return 0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F;
